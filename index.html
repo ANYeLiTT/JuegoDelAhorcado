@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hangman">
+        <svg id="hangman-svg" height="250" width="200">
+            <!-- Gallow -->
+            <line x1="20" y1="220" x2="180" y2="220" stroke="black" stroke-width="4"/>
+            <line x1="100" y1="220" x2="100" y2="20" stroke="black" stroke-width="4"/>
+            <line x1="100" y1="20" x2="150" y2="20" stroke="black" stroke-width="4"/>
+            <line x1="150" y1="20" x2="150" y2="50" stroke="black" stroke-width="4"/>
+        </svg>
+        <div id="word-container">
+            <p id="word-display"></p>
+        </div>
+        <div id="letters">
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
