@@ -24,3 +24,34 @@ const resetGame = () => {
 }
 
 resetGame();
+
+
+//Función que elige una palabra aleatoria y actualiza el estado del juego
+const getRandomWord = () =>{
+    const{ word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
+    currentWord = word;
+    document.querySelector(".hint-text-b").innerText = hint;
+    resetGame();
+}
+
+//Función para determinar si el juego se ha ganado o se ha perdido
+
+const gameOver = (isVictory) => {
+    //Muestra el modo del Game Over, si se ha perdido o se ha ganado
+    const modalText = isVictory ? `¡Encontraste la palabra!:` : `La palabra correcta era:`;
+    gameModal.querySelector("img").src = `images/${isVictory ? 'victory' : 'lost'}.gif`;
+    gameModal.querySelector("h4").innerText = isVictory ? '¡Felicidades!' : 'Game Over';
+    gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
+    gameModal.classList.add("show");
+}
+
+//Creando una botonera en pantalla
+for (let i =97; i <= 122; i++){
+    const button = document.createElement("button");
+    button.innerText = String.fromCharCode(i);
+    keyboardDiv.appendChild(button);
+    button.addEventListener("click", (e) => initGame(e.target, String.fromCharCode(i)));
+}
+
+//Empezando el juego con una letra aleatoria
+getRandomWord();
