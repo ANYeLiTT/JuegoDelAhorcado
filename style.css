@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#hangman-container {
+    margin-top: 50px;
+}
+
+#hangman-svg-container {
+    margin-bottom: 20px;
+}
+
+#word-container {
+    margin-bottom: 20px;
+}
+
+#word-display {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#letters-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.letter {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.letter:hover {
+    background-color: #ccc;
+}
+
+#message {
+    font-size: 18px;
+    color: red;
+}
