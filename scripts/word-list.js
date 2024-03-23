@@ -1,246 +1,82 @@
 const wordList = [
     {
-        word: "penguin",
-        hint: "A flightless bird that loves the cold."
+        word: "perro",
+        hint: "Un animal doméstico que ladra."
     },
     {
-        word: "banana",
-        hint: "A yellow fruit that monkeys love."
+        word: "gato",
+        hint: "Un animal independiente que suele maullar."
     },
     {
-        word: "bubblegum",
-        hint: "Chewy and pink, fun to blow into bubbles."
+        word: "playa",
+        hint: "Lugar de arena y mar donde puedes nadar y tomar el sol."
     },
     {
-        word: "sunny",
-        hint: "The weather when the sky is clear and bright."
+        word: "bicicleta",
+        hint: "Medio de transporte de dos ruedas que se impulsa con pedales."
     },
     {
-        word: "giggles",
-        hint: "The sound of uncontrollable laughter."
+        word: "computadora",
+        hint: "Dispositivo electrónico que se utiliza para procesar información."
     },
     {
-        word: "jellybean",
-        hint: "A small, sweet, and colorful candy."
+        word: "libro",
+        hint: "Conjunto de hojas impresas que forman una obra literaria o científica."
     },
     {
-        word: "robot",
-        hint: "A mechanical friend that follows commands."
+        word: "Luna",
+        hint: "Satélite natural de la Tierra."
     },
     {
-        word: "superhero",
-        hint: "A fictional character with extraordinary powers."
+        word: "bosque",
+        hint: "Extensión de terreno cubierta de árboles y vegetación."
     },
     {
-        word: "cupcake",
-        hint: "A small, delicious cake often topped with frosting."
+        word: "jirafa",
+        hint: "Animal mamífero de cuello largo y patas largas."
     },
     {
-        word: "laughter",
-        hint: "The joyful sound of amusement."
+        word: "nube",
+        hint: "Masa visible formada por partículas de agua suspendidas en la atmósfera."
     },
     {
-        word: "kite",
-        hint: "A flying toy attached to a string."
+        word: "guitarra",
+        hint: "Instrumento musical de cuerda pulsada."
     },
     {
-        word: "snuggle",
-        hint: "To embrace closely for warmth or affection."
+        word: "ciudad",
+        hint: "Núcleo urbano con alta densidad de población."
     },
     {
-        word: "sparkle",
-        hint: "Shining with small, bright flashes of light."
+        word: "sol",
+        hint: "Estrella luminosa alrededor de la cual gira la Tierra."
     },
     {
-        word: "gummybear",
-        hint: "A chewy, fruity treat shaped like a bear."
+        word: "mesa",
+        hint: "Mueble con una superficie plana y patas para sostener objetos."
     },
     {
-        word: "cozy",
-        hint: "Warm and comfortable, like a blanket."
+        word: "sombrero",
+        hint: "Prenda de vestir que se utiliza en la cabeza para protegerse del sol o del frío."
     },
     {
-        word: "whistle",
-        hint: "A small device that makes a high-pitched sound."
+        word: "telefono",
+        hint: "Dispositivo de comunicación que permite hablar a distancia."
     },
     {
-        word: "bounce",
-        hint: "To spring back after hitting a surface."
+        word: "planta",
+        hint: "Ser vivo capaz de fabricar su propio alimento mediante la fotosíntesis."
     },
     {
-        word: "puzzle",
-        hint: "A game or challenge to test your brain."
+        word: "camino",
+        hint: "Vía que se utiliza para ir de un lugar a otro."
     },
     {
-        word: "firefly",
-        hint: "A tiny insect that glows in the dark."
+        word: "torre",
+        hint: "Edificación alta y estrecha que domina el paisaje urbano."
     },
     {
-        word: "campfire",
-        hint: "A warm, outdoor fire for cooking or gathering."
-    },
-    {
-        word: "wizard",
-        hint: "A magical person with special powers."
-    },
-    {
-        word: "daisy",
-        hint: "A simple and cheerful white flower."
-    },
-    {
-        word: "jungle",
-        hint: "A dense, tropical forest full of wildlife."
-    },
-    {
-        word: "muffin",
-        hint: "A small, sweet bread often with fruit or nuts."
-    },
-    {
-        word: "pillow",
-        hint: "Soft and fluffy for resting your head."
-    },
-    {
-        word: "robot",
-        hint: "A mechanical friend that follows commands."
-    },
-    {
-        word: "starry",
-        hint: "Filled with bright and shining stars."
-    },
-    {
-        word: "wizard",
-        hint: "A magical person with special powers."
-    },
-    {
-        word: "playful",
-        hint: "Full of fun and lively activity."
-    },
-    {
-        word: "magic",
-        hint: "Mysterious and enchanting supernatural forces."
-    },
-    {
-        word: "giggle",
-        hint: "A light, happy laugh."
-    },
-    {
-        word: "sunshine",
-        hint: "The warm and bright rays of the sun."
-    },
-    {
-        word: "fuzzy",
-        hint: "Soft and slightly fluffy to the touch."
-    },
-    {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
-    },
-    {
-        word: "playground",
-        hint: "An outdoor area with equipment for children to play on."
-    },
-    {
-        word: "lollipop",
-        hint: "A sweet candy on a stick, often brightly colored."
-    },
-    {
-        word: "giraffe",
-        hint: "A tall African mammal with a long neck."
-    },
-    {
-        word: "bubble",
-        hint: "A thin sphere of liquid enclosing air or gas."
-    },
-    {
-        word: "cartoon",
-        hint: "An animated film or TV show with funny characters."
-    },
-    {
-        word: "puzzle",
-        hint: "A game or challenge to test your brain."
-    },
-    {
-        word: "smile",
-        hint: "A happy facial expression."
-    },
-    {
-        word: "sprinkle",
-        hint: "Tiny bits of candy or decoration."
-    },
-    {
-        word: "acorn",
-        hint: "The nut of an oak tree."
-    },
-    {
-        word: "playful",
-        hint: "Full of fun and lively activity."
-    },
-    {
-        word: "giggle",
-        hint: "A light, happy laugh."
-    },
-    {
-        word: "sparkle",
-        hint: "Shining with small, bright flashes of light."
-    },
-    {
-        word: "snuggle",
-        hint: "To embrace closely for warmth or affection."
-    },
-    {
-        word: "laughter",
-        hint: "The joyful sound of amusement."
-    },
-    {
-        word: "campfire",
-        hint: "A warm, outdoor fire for cooking or gathering."
-    },
-    {
-        word: "pillow",
-        hint: "Soft and fluffy for resting your head."
-    },
-    {
-        word: "muffin",
-        hint: "A small, sweet bread often with fruit or nuts."
-    },
-    {
-        word: "giraffe",
-        hint: "A tall African mammal with a long neck."
-    },
-    {
-        word: "cartoon",
-        hint: "An animated film or TV show with funny characters."
-    },
-    {
-        word: "lollipop",
-        hint: "A sweet candy on a stick, often brightly colored."
-    },
-    {
-        word: "fuzzy",
-        hint: "Soft and slightly fluffy to the touch."
-    },
-    {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
-    },
-    {
-        word: "playground",
-        hint: "An outdoor area with equipment for children to play on."
-    },
-    {
-        word: "sparkle",
-        hint: "Shining with small, bright flashes of light."
-    },
-    {
-        word: "smile",
-        hint: "A happy facial expression."
-    },
-    {
-        word: "sprinkle",
-        hint: "Tiny bits of candy or decoration."
-    },
-    {
-        word: "acorn",
-        hint: "The nut of an oak tree."
-    },
+        word: "llave",
+        hint: "Instrumento que se utiliza para abrir o cerrar una cerradura."
+    }
 ];
