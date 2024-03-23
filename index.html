@@ -3,31 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>Ahorcado</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="hangman">
-        <svg id="hangman-svg" height="250" width="200">
-            <!-- Gallow -->
-            <line x1="20" y1="220" x2="180" y2="220" stroke="black" stroke-width="4"/>
-            <line x1="100" y1="220" x2="100" y2="20" stroke="black" stroke-width="4"/>
-            <line x1="100" y1="20" x2="150" y2="20" stroke="black" stroke-width="4"/>
-            <line x1="150" y1="20" x2="150" y2="50" stroke="black" stroke-width="4"/>
-        </svg>
-        <div id="word-container">
-            <p id="word-display"></p>
-        </div>
-        <div id="letters">
-            <p id="message"></p>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
-=======
-    <title>Hangman Game JavaScript</title>
+    <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts/word-list.js" defer></script>
     <script src="scripts/script.js" defer></script>
@@ -36,30 +12,25 @@
     <div class="game-modal">
         <div class="content">
             <img src="images/lost.gif" alt="gif">
-            <h4>Game Over!</h4>
-            <p>The correct word was: <b>rainbow</b></p>
-            <button class="play-again">Play Again</button>
+            <h4>Fin del Juego!</h4>
+            <p>La palabra correcta era: <b>Arcohíris</b></p>
+            <button class="play-again">Jugar de nuevo</button>
         </div>
     </div>
     <div class="container">
-        <div class="hagman-box">
+        <div class="hangman-box">
             <img src="images/hangman-0.svg" draggable="false" alt="hangman-img">
-            <h1>Hangman Game</h1>
+            <h1>Juego del ahorcado</h1>
         </div>
         <div class="game-box">
             <ul class="word-display">
-            <li class="letter.guessed"></li>
-            <li class="letter.guessed"></li>
-            <li class="letter.guessed"></li>
-            <li class="letter.guessed"></li>
-            <li class="letter.guessed"></li>
-            <li class="letter.guessed"></li>
-            <li class="letter.guessed"></li>
             </ul>
             <h4 class="hint-text">
-                Hint: <b></b></h4>
-            <h4 class="guesses-text">Incorrect guesses: <b>0 / 6</b></h4>
-            <div class="keyboard"></div>
+                Pista: <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veniam qui?</b>
+            </h4>
+            <h4 class="guesses-text">Intentos restantes: <b>0 / 6</b></h4>
+            <div class="keyboard">
+            </div>
         </div>
     </div>
 </body>
